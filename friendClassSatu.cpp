@@ -3,12 +3,22 @@
 using namespace std;
 
 class siswa;
-class orang {
-
-    private:
+class orang
+{
+private:
     string nama;
+    
 public:
     void setNama(string pnama);
-    friend class siswa;
-    
+        friend class siswa;
+};
+
+class siswa
+{
+private:
+    int id;
+
+public:
+    void setId(int pid);
+    void displayAll(orang &a);
 };
